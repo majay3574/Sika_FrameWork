@@ -1,0 +1,303 @@
+[2025-04-23 20:11:52] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:11:52] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:11:52] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:11:52] [INFO] [hooks]: Scenario completed in 196ms
+[2025-04-23 20:11:52] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:11:52] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:13:52] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:13:52] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:13:53] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:14:23] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:14:24] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 20:14:24] [INFO] [hooks]: Scenario completed in 31900ms
+[2025-04-23 20:14:24] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:14:24] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:15:16] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:15:16] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:15:16] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:15:16] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:15:16] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:15:46] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:15:48] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 20:15:48] [INFO] [hooks]: Scenario completed in 32381ms
+[2025-04-23 20:15:48] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:15:48] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:15:57] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:15:57] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:15:57] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:15:57] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:15:58] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:16:02] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-23 20:16:02] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-23 20:16:02] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-23 20:16:02] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-23 20:16:03] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-23 20:16:03] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-23 20:16:03] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-25"]
+[2025-04-23 20:16:34] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:16:35] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 20:16:35] [INFO] [hooks]: Scenario completed in 37776ms
+[2025-04-23 20:16:35] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:16:35] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:32:11] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:32:11] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:32:11] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:32:11] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:32:14] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:32:19] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-23 20:32:19] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-23 20:32:19] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-23 20:32:19] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-23 20:32:21] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-23 20:32:21] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-23 20:32:21] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-25"]
+[2025-04-23 20:32:30] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:32:30] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:32:30] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:34:59] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:34:59] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:34:59] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:34:59] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:35:00] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:35:06] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-23 20:35:06] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-23 20:35:06] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-23 20:35:06] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-23 20:35:07] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-23 20:35:07] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-23 20:35:08] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-25"]
+[2025-04-23 20:35:38] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:35:40] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 20:35:40] [INFO] [hooks]: Scenario completed in 41727ms
+[2025-04-23 20:35:40] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:35:40] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:36:19] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:36:19] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:36:19] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:36:19] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:36:21] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:36:28] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:42:54] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:42:54] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:42:54] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:42:54] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:42:54] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:42:54] [INFO] [hooks]: Scenario completed in 33ms
+[2025-04-23 20:42:54] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:42:54] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:43:49] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:43:49] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:43:49] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:43:49] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:43:49] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:43:49] [INFO] [hooks]: Scenario completed in 35ms
+[2025-04-23 20:43:49] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:43:49] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:45:28] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:45:28] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:45:28] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:45:28] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:45:28] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:45:28] [INFO] [hooks]: Scenario completed in 57ms
+[2025-04-23 20:45:28] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:45:28] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:49:58] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:49:58] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:49:58] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:50:46] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:50:50] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:50:50] [INFO] [hooks]: Scenario completed in 51327ms
+[2025-04-23 20:50:50] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:50:50] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:51:16] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:51:16] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:51:20] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:51:26] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 20:51:26] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:51:26] [INFO] [hooks]: Scenario completed in 9962ms
+[2025-04-23 20:51:26] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:51:26] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 20:53:04] [INFO] [hooks]: Setting up test environment
+[2025-04-23 20:53:04] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 20:53:07] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 20:53:23] [INFO] [hooks]: Using browser: chrome
+[2025-04-23 20:53:46] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 20:54:17] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 20:54:20] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 20:54:22] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-23 20:54:23] [INFO] [hooks]: Scenario completed in 79042ms
+[2025-04-23 20:54:23] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 20:54:23] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 21:33:49] [INFO] [hooks]: Setting up test environment
+[2025-04-23 21:33:49] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 21:33:52] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 21:34:17] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 21:34:19] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 21:34:20] [INFO] [hooks]: Scenario completed in 30798ms
+[2025-04-23 21:34:20] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 21:34:20] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:20:09] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:20:09] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:20:11] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 22:20:11] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 22:20:11] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 22:20:11] [INFO] [hooks]: Scenario completed in 1776ms
+[2025-04-23 22:20:11] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 22:20:11] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:21:37] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:21:37] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:21:41] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 22:21:41] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 22:21:41] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 22:21:41] [INFO] [hooks]: Scenario completed in 3771ms
+[2025-04-23 22:21:41] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 22:21:41] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:23:08] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:23:08] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:23:08] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 22:23:08] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 22:23:08] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 22:23:08] [INFO] [hooks]: Scenario completed in 887ms
+[2025-04-23 22:23:08] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 22:23:08] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:28:38] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:28:38] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:29:03] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 22:29:19] [INFO] [hooks]: Using browser: chromium
+[2025-04-23 22:29:22] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 22:29:22] [INFO] [hooks]: Scenario completed in 43667ms
+[2025-04-23 22:29:22] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 22:29:22] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:30:25] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:30:25] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:30:25] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 22:30:25] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:31:39] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:31:39] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:31:45] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 22:31:50] [INFO] [hooks]: Using browser: chrome
+[2025-04-23 22:31:56] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 22:32:03] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-23 22:32:03] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-23 22:32:07] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-23 22:32:07] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-23 22:32:08] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-23 22:32:08] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-23 22:32:08] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-25"]
+[2025-04-23 22:32:38] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 22:32:44] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 22:32:50] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-23 22:32:52] [INFO] [hooks]: Scenario completed in 73268ms
+[2025-04-23 22:32:52] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 22:32:52] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 22:34:03] [INFO] [hooks]: Setting up test environment
+[2025-04-23 22:34:03] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 22:34:05] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 22:34:13] [INFO] [hooks]: Using browser: msedge
+[2025-04-23 22:34:33] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 23:04:42] [INFO] [hooks]: Setting up test environment
+[2025-04-23 23:04:42] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 23:04:47] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 23:04:52] [INFO] [hooks]: Using browser: msedge
+[2025-04-23 23:05:25] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 23:05:55] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 23:05:59] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 23:38:54] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-23 23:38:54] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 23:38:54] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 23:38:55] [INFO] [hooks]: Scenario completed in 2053798ms
+[2025-04-23 23:46:31] [INFO] [hooks]: Setting up test environment
+[2025-04-23 23:46:31] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 23:46:31] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 23:46:31] [INFO] [hooks]: Using browser: chrome
+[2025-04-23 23:46:32] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 23:46:39] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-23 23:46:39] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-23 23:46:42] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-23 23:46:42] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-23 23:46:44] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-23 23:46:44] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-23 23:47:14] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 23:47:16] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 23:47:18] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-23 23:47:19] [INFO] [hooks]: Scenario completed in 48238ms
+[2025-04-23 23:47:19] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 23:47:19] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-23 23:48:12] [INFO] [hooks]: Setting up test environment
+[2025-04-23 23:48:12] [INFO] [hooks]: Test environment setup complete
+[2025-04-23 23:48:12] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-23 23:48:12] [INFO] [hooks]: Using browser: chrome
+[2025-04-23 23:48:13] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-23 23:48:22] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-23 23:48:22] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-23 23:48:23] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-23 23:48:23] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-23 23:48:24] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-23 23:48:24] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-23 23:48:24] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-25"]
+[2025-04-23 23:49:24] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-23 23:49:27] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-23 23:49:30] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-23 23:49:30] [INFO] [hooks]: Scenario completed in 78577ms
+[2025-04-23 23:49:30] [INFO] [hooks]: Cleaning up test environment
+[2025-04-23 23:49:30] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-24 00:09:51] [INFO] [hooks]: Setting up test environment
+[2025-04-24 00:09:52] [INFO] [hooks]: Test environment setup complete
+[2025-04-24 00:09:52] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-24 00:09:52] [INFO] [hooks]: Using browser: webkit
+[2025-04-24 00:09:54] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-24 00:10:06] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-24 00:10:06] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-24 00:10:06] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-24 00:10:06] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-24 00:10:08] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-24 00:10:08] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-24 00:10:29] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-24 00:10:29] [INFO] [hooks]: Cleaning up test environment
+[2025-04-24 00:10:29] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-24 00:12:22] [INFO] [hooks]: Setting up test environment
+[2025-04-24 00:12:22] [INFO] [hooks]: Test environment setup complete
+[2025-04-24 00:12:22] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-24 00:12:22] [INFO] [hooks]: Using browser: chrome
+[2025-04-24 00:12:23] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-24 00:12:54] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-24 00:12:57] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-24 00:13:00] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-24 00:13:01] [INFO] [hooks]: Scenario completed in 39449ms
+[2025-04-24 00:13:01] [INFO] [hooks]: Cleaning up test environment
+[2025-04-24 00:13:01] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-24 00:13:17] [INFO] [hooks]: Setting up test environment
+[2025-04-24 00:13:17] [INFO] [hooks]: Test environment setup complete
+[2025-04-24 00:13:17] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-24 00:13:17] [INFO] [hooks]: Using browser: chrome
+[2025-04-24 00:13:18] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-24 00:13:49] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-24 00:13:52] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-24 00:13:57] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-24 00:13:57] [INFO] [hooks]: Scenario completed in 40782ms
+[2025-04-24 00:13:57] [INFO] [hooks]: Cleaning up test environment
+[2025-04-24 00:13:57] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-24 00:14:57] [INFO] [hooks]: Setting up test environment
+[2025-04-24 00:14:57] [INFO] [hooks]: Test environment setup complete
+[2025-04-24 00:14:57] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-24 00:14:57] [INFO] [hooks]: Using browser: chrome
+[2025-04-24 00:14:58] [INFO] [wrapper]: Navigating to: https://www.airbnb.com
+[2025-04-24 00:15:01] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-24 00:15:01] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-24 00:15:04] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-24 00:15:04] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-24 00:15:35] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-24 00:15:38] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in-failure.png
+[2025-04-24 00:15:41] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in.zip
+[2025-04-24 00:15:42] [INFO] [hooks]: Scenario completed in 44197ms
+[2025-04-24 00:15:42] [INFO] [hooks]: Cleaning up test environment
+[2025-04-24 00:15:42] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-24 00:41:20] [INFO] [hooks]: Setting up test environment
+[2025-04-24 00:41:20] [INFO] [hooks]: Test environment setup complete
+[2025-04-24 00:41:20] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-24 00:41:20] [INFO] [hooks]: Using browser: chrome
+[2025-04-24 00:41:21] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-24 00:41:24] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-24 00:41:24] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-24 00:41:27] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-24 00:41:27] [INFO] [wrapper]: Clicking on: text=United States
