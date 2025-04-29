@@ -8,7 +8,7 @@ const logger = createLogger('wrapper');
  * Wrapper class for Playwright Page interactions
  */
 export class PlaywrightWrapper {
-  private page: Page;
+  public page: Page;
   
   constructor(page: Page) {
     this.page = page;

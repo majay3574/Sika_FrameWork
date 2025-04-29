@@ -9,7 +9,7 @@ import { BASE_URL } from '../config/config';
 const logger = createLogger('airbnb-steps');
 const selectors = new Selectors();
 
-// Define the World context interface
+
 declare module '@cucumber/cucumber' {
   interface World {
     page: Page;
@@ -20,33 +20,37 @@ const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(worl
 
 Given('user navigates to the URL', async function () {
   const wrapper = getWrapper(this);
-  await wrapper.navigateTo(BASE_URL); // Or use BASE_URL
+  await wrapper.navigateTo(BASE_URL);
   logger.info('Navigated to Airbnb URL');
 });
 
 When('user enters destination in the location field', async function () {
   const wrapper = getWrapper(this);
+  await wrapper.page.waitForTimeout(2000);
   await wrapper.fill(selectors.destinationField, 'United States');
   logger.info('Entered destination: United States');
 });
 
 When('user clicks United States from the destination', async function () {
   const wrapper = getWrapper(this);
+  await wrapper.waitForVisible(selectors.destinationDropdownOption);
   await wrapper.click(selectors.destinationDropdownOption);
   logger.info('Clicked on "United States" from the dropdown');
 });
 
 When('user chooses the check-in date', async function () {
   const wrapper = getWrapper(this);
-  await wrapper.click(selectors.checkinDateField);
-  await wrapper.click('//*[@data-testid="datepicker-day-2025-04-25"]'); // Example date
+  // await wrapper.click(selectors.checkinDateField);
+  await wrapper.page.waitForTimeout(2000);
+  await wrapper.click(`(//button[contains(@aria-label,'Available. Select as check-in date.')])[1]`);
   logger.info('Selected check-in date');
 });
 
 When('user chooses the checkout date', async function () {
   const wrapper = getWrapper(this);
-  await wrapper.click(selectors.checkoutDateField);
-  await wrapper.click('//*[@data-testid="datepicker-day-2025-04-30"]'); // Example date
+  //await wrapper.click(selectors.checkoutDateField);
+  await wrapper.page.waitForTimeout(2000);
+  await wrapper.click(`(//button[contains(@aria-label,'Available. Select as checkout date.')])[1]`); // Example date
   logger.info('Selected checkout date');
 });
 
@@ -82,7 +86,9 @@ When('user clicks search button for searching hotels', async function () {
 
 Then('user verifies United States in the search page', async function () {
   const wrapper = getWrapper(this);
-  const resultText = await wrapper.getText(selectors.searchResults);
-  expect(resultText).to.include('United States');
+  await wrapper.page.waitForLoadState('domcontentloaded');
+  const resultText = await wrapper.page.title();
+  // const resultText = await wrapper.getText(selectors.searchResults);
+  expect(resultText).to.include('Rooms on Rent United States');
   logger.info('Verified "United States" in search results');
 });

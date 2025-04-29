@@ -65,38 +65,6 @@ Before(async function (this: CustomWorld, scenario) {
     default:
       throw new Error(`Unsupported browser type: ${browserType}`);
   }
-  /*  // Create browser context
-   switch (this.parameters.browser) {
-     case "chrome":
-     case "msedge":
-     case "chromium":
-     case "firefox":
- 
-       this.context = await this.browser.newContext({
-         recordVideo: videoOptions.enabled ? { dir: videoOptions.path } : undefined, viewport: null
-       });
- 
-       // Start tracing if enabled
-       if (traceOptions.enabled) {
-         await this.context.tracing.start({ screenshots: true, snapshots: true });
-       }
-       // Create page
-       this.page = await this.context.newPage();
-       break;
- 
-     case 'webkit':
-       this.context = await this.browser.newContext({
-         recordVideo: videoOptions.enabled ? { dir: videoOptions.path } : undefined
-       });
- 
-       // Start tracing if enabled
-       if (traceOptions.enabled) {
-         await this.context.tracing.start({ screenshots: true, snapshots: true });
-       }
-       // Create page
-       this.page = await this.context.newPage();
-       break;
-   } */
   const browser: any = this.parameters.browser;
   // Determine if viewport should be set
   const shouldSetViewportNull = ["chrome", "msedge", "chromium", "firefox"].includes(browser);
@@ -117,7 +85,6 @@ Before(async function (this: CustomWorld, scenario) {
       snapshots: true,
     });
   }
-
   // Create page
   this.page = await this.context.newPage();
 
@@ -126,17 +93,18 @@ Before(async function (this: CustomWorld, scenario) {
 // Cleanup after each scenario
 After(async function (this: CustomWorld, scenario) {
   logger.info(`Finishing scenario: ${this.testName}`);
-  // Take screenshot on failure
   if (scenario.result?.status === Status.FAILED && screenshotOptions.takeOnFailure) {
     if (this.page) {
-      const screenshotPath = `${screenshotOptions.path}${this.testName}-failure.png`;
+      const timeStamp = Date.now();
+      const screenshotPath = `${screenshotOptions.path}${this.testName}${timeStamp}-failure.png`;
       await this.page.screenshot({ path: screenshotPath, fullPage: true });
       logger.info(`Screenshot saved to: ${screenshotPath}`);
     }
   }
   // Stop tracing if enabled
   if (traceOptions.enabled && this.context) {
-    const tracePath = `${traceOptions.path}${this.testName}.zip`;
+    const timeStamp = Date.now();
+    const tracePath = `${traceOptions.path}${this.testName}${timeStamp}.zip`;
     await this.context.tracing.stop({ path: tracePath });
     logger.info(`Trace saved to: ${tracePath}`);
   }

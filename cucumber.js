@@ -2,7 +2,7 @@
 const common = {
   requireModule: ['ts-node/register'],
   require: [
-    'step_definitions/**/*.ts', 
+    'step_definitions/**/*.ts',
     'hooks/**/*.ts'
   ],
   format: [
@@ -16,7 +16,7 @@ const common = {
   }
 };
 module.exports = {
- 
+
   chrome: {
     ...common,
     worldParameters: {
@@ -45,7 +45,7 @@ module.exports = {
   default: {
     ...common,
     worldParameters: {
-      browser: 'chromium'  
+      browser: 'chrome'
     }
   }
 };

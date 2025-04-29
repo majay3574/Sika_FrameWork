@@ -301,3 +301,190 @@
 [2025-04-24 00:41:24] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
 [2025-04-24 00:41:27] [INFO] [airbnb-steps]: Entered destination: United States
 [2025-04-24 00:41:27] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-24 11:40:02] [INFO] [hooks]: Setting up test environment
+[2025-04-24 11:40:02] [INFO] [hooks]: Test environment setup complete
+[2025-04-24 11:40:03] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-24 11:40:03] [INFO] [hooks]: Using browser: chrome
+[2025-04-24 11:40:05] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-24 11:40:08] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-24 11:40:08] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-24 11:40:10] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-24 11:40:10] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-24 11:40:41] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-24 11:40:44] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745475041236-failure.png
+[2025-04-24 11:40:46] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745475044604.zip
+[2025-04-24 11:40:47] [INFO] [hooks]: Scenario completed in 44379ms
+[2025-04-24 11:40:47] [INFO] [hooks]: Cleaning up test environment
+[2025-04-24 11:40:47] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 12:40:00] [INFO] [hooks]: Setting up test environment
+[2025-04-29 12:40:00] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 12:40:00] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 12:40:00] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 12:40:01] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 12:40:04] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 12:40:04] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 12:40:06] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 12:40:07] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 12:40:09] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 12:40:09] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-0']
+[2025-04-29 12:40:09] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-25"]
+[2025-04-29 12:40:40] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 12:40:43] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745910640234-failure.png
+[2025-04-29 12:40:45] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745910643402.zip
+[2025-04-29 12:40:48] [INFO] [hooks]: Scenario completed in 48050ms
+[2025-04-29 12:40:48] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 12:40:48] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 12:48:49] [INFO] [hooks]: Setting up test environment
+[2025-04-29 12:48:49] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 12:48:49] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 12:48:49] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 12:48:50] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 12:48:59] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 12:48:59] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 12:49:03] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 12:49:03] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 12:52:17] [INFO] [hooks]: Setting up test environment
+[2025-04-29 12:52:17] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 12:52:17] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 12:52:17] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 12:52:18] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 12:52:20] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 12:52:23] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 12:52:23] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 12:52:23] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 12:52:24] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 12:52:26] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 12:52:28] [INFO] [wrapper]: Clicking on: (//button[@aria-label[substring(., string-length(.) - string-length('Available. Select as check-in date.') + 1) = 'Available. Select as check-in date.']])[1]
+[2025-04-29 12:52:29] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 12:52:29] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-1']
+[2025-04-29 12:52:29] [INFO] [wrapper]: Clicking on: //*[@data-testid="datepicker-day-2025-04-30"]
+[2025-04-29 12:52:59] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 12:53:04] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745911379559-failure.png
+[2025-04-29 12:53:08] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745911384598.zip
+[2025-04-29 12:53:09] [INFO] [hooks]: Scenario completed in 51858ms
+[2025-04-29 12:53:09] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 12:53:09] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 12:55:54] [INFO] [hooks]: Setting up test environment
+[2025-04-29 12:55:54] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 12:55:54] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 12:55:54] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 12:55:55] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 12:55:58] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 12:56:00] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 12:56:02] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 12:56:02] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 12:56:03] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 12:56:03] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 12:56:06] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as check-in date.')])[1]
+[2025-04-29 12:56:06] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 12:56:06] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-split-dates-1']
+[2025-04-29 12:56:06] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as checkout date.')])[1]
+[2025-04-29 12:56:13] [INFO] [airbnb-steps]: Selected checkout date
+[2025-04-29 12:56:13] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-guests-button']
+[2025-04-29 12:56:14] [INFO] [airbnb-steps]: Clicked on add guest button
+[2025-04-29 12:56:14] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-adults-increase-button']
+[2025-04-29 12:56:15] [INFO] [airbnb-steps]: Added an adult guest
+[2025-04-29 12:56:15] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-children-increase-button']
+[2025-04-29 12:56:16] [INFO] [airbnb-steps]: Added a child guest
+[2025-04-29 12:56:16] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-infants-increase-button']
+[2025-04-29 12:56:16] [INFO] [airbnb-steps]: Added an infant guest
+[2025-04-29 12:56:16] [INFO] [wrapper]: Clicking on: //*[@class='c1nkokj4 atm_9s_116y0ak atm_l8_exct8b atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr']
+[2025-04-29 12:56:17] [INFO] [airbnb-steps]: Clicked search button
+[2025-04-29 12:56:17] [INFO] [wrapper]: Getting text from: .search-results
+[2025-04-29 12:56:47] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 12:56:50] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745911607935-failure.png
+[2025-04-29 12:56:53] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745911610480.zip
+[2025-04-29 12:56:53] [INFO] [hooks]: Scenario completed in 59153ms
+[2025-04-29 12:56:53] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 12:56:53] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 13:03:48] [INFO] [hooks]: Setting up test environment
+[2025-04-29 13:03:48] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 13:03:48] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 13:03:48] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 13:03:50] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 13:03:53] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 13:03:56] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 13:03:59] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 13:03:59] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 13:04:00] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 13:04:02] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 13:04:04] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as check-in date.')])[1]
+[2025-04-29 13:04:05] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 13:04:07] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as checkout date.')])[1]
+[2025-04-29 13:04:07] [INFO] [airbnb-steps]: Selected checkout date
+[2025-04-29 13:04:07] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-guests-button']
+[2025-04-29 13:04:08] [INFO] [airbnb-steps]: Clicked on add guest button
+[2025-04-29 13:04:08] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-adults-increase-button']
+[2025-04-29 13:04:09] [INFO] [airbnb-steps]: Added an adult guest
+[2025-04-29 13:04:09] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-children-increase-button']
+[2025-04-29 13:04:09] [INFO] [airbnb-steps]: Added a child guest
+[2025-04-29 13:04:09] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-infants-increase-button']
+[2025-04-29 13:04:10] [INFO] [airbnb-steps]: Added an infant guest
+[2025-04-29 13:04:10] [INFO] [wrapper]: Clicking on: //*[@class='c1nkokj4 atm_9s_116y0ak atm_l8_exct8b atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr']
+[2025-04-29 13:04:11] [INFO] [airbnb-steps]: Clicked search button
+[2025-04-29 13:04:11] [INFO] [wrapper]: Getting text from: .search-results
+[2025-04-29 13:04:41] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 13:04:46] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745912081999-failure.png
+[2025-04-29 13:04:49] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745912086444.zip
+[2025-04-29 13:04:50] [INFO] [hooks]: Scenario completed in 62230ms
+[2025-04-29 13:04:50] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 13:04:50] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 13:09:49] [INFO] [hooks]: Setting up test environment
+[2025-04-29 13:09:49] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 13:09:49] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 13:09:49] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 13:09:50] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 13:09:53] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 13:09:56] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 13:09:59] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 13:09:59] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 13:10:01] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 13:10:02] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 13:10:04] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as check-in date.')])[1]
+[2025-04-29 13:10:05] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 13:10:07] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as checkout date.')])[1]
+[2025-04-29 13:10:07] [INFO] [airbnb-steps]: Selected checkout date
+[2025-04-29 13:10:07] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-guests-button']
+[2025-04-29 13:10:08] [INFO] [airbnb-steps]: Clicked on add guest button
+[2025-04-29 13:10:08] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-adults-increase-button']
+[2025-04-29 13:10:08] [INFO] [airbnb-steps]: Added an adult guest
+[2025-04-29 13:10:08] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-children-increase-button']
+[2025-04-29 13:10:09] [INFO] [airbnb-steps]: Added a child guest
+[2025-04-29 13:10:09] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-infants-increase-button']
+[2025-04-29 13:10:09] [INFO] [airbnb-steps]: Added an infant guest
+[2025-04-29 13:10:09] [INFO] [wrapper]: Clicking on: //*[@class='c1nkokj4 atm_9s_116y0ak atm_l8_exct8b atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr']
+[2025-04-29 13:10:10] [INFO] [airbnb-steps]: Clicked search button
+[2025-04-29 13:10:11] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 13:10:23] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745912411353-failure.png
+[2025-04-29 13:10:29] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745912423968.zip
+[2025-04-29 13:10:31] [INFO] [hooks]: Scenario completed in 42695ms
+[2025-04-29 13:10:31] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 13:10:31] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 13:11:39] [INFO] [hooks]: Setting up test environment
+[2025-04-29 13:11:40] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 13:11:40] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 13:11:40] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 13:11:50] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 13:12:09] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 13:12:19] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 13:12:23] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 13:12:23] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 13:12:23] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 13:12:24] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 13:12:27] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as check-in date.')])[1]
+[2025-04-29 13:12:27] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 13:12:29] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as checkout date.')])[1]
+[2025-04-29 13:12:30] [INFO] [airbnb-steps]: Selected checkout date
+[2025-04-29 13:12:30] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-guests-button']
+[2025-04-29 13:12:31] [INFO] [airbnb-steps]: Clicked on add guest button
+[2025-04-29 13:12:31] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-adults-increase-button']
+[2025-04-29 13:12:31] [INFO] [airbnb-steps]: Added an adult guest
+[2025-04-29 13:12:31] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-children-increase-button']
+[2025-04-29 13:12:32] [INFO] [airbnb-steps]: Added a child guest
+[2025-04-29 13:12:32] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-infants-increase-button']
+[2025-04-29 13:12:32] [INFO] [airbnb-steps]: Added an infant guest
+[2025-04-29 13:12:32] [INFO] [wrapper]: Clicking on: //*[@class='c1nkokj4 atm_9s_116y0ak atm_l8_exct8b atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr']
+[2025-04-29 13:12:34] [INFO] [airbnb-steps]: Clicked search button
+[2025-04-29 13:12:34] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 13:12:52] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Login-and-Check-in1745912554997-failure.png
+[2025-04-29 13:13:01] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745912572374.zip
