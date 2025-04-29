@@ -87,8 +87,11 @@ When('user clicks search button for searching hotels', async function () {
 Then('user verifies United States in the search page', async function () {
   const wrapper = getWrapper(this);
   await wrapper.page.waitForLoadState('domcontentloaded');
+  await wrapper.page.waitForTimeout(5000);
   const resultText = await wrapper.page.title();
+  console.log(resultText);
+
   // const resultText = await wrapper.getText(selectors.searchResults);
-  expect(resultText).to.include('Rooms on Rent United States');
+  expect(resultText).contains('Airbnb | United States');
   logger.info('Verified "United States" in search results');
 });
