@@ -1,8 +1,10 @@
 Feature: AirBnb Login and Check-in
-background: 
+
+  Background: 
+    Given user navigates to the URL
+
   @requiresLogin
   Scenario: Login and Check-in
-    Given user navigates to the URL
     When user enters destination in the location field
     And user clicks United States from the destination
     And user chooses the check-in date

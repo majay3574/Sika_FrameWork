@@ -1,163 +1,111 @@
 [
   {
-    "description": "background: ",
+    "description": "",
     "elements": [
       {
         "description": "",
-        "id": "airbnb-login-and-check-in;login-and-check-in",
+        "id": "filter-airbnb;filter-airbnb-by-price-and-rating",
         "keyword": "Scenario",
-        "line": 4,
-        "name": "Login and Check-in",
+        "line": 17,
+        "name": "Filter AirBnB by price and rating",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1513543799
+              "duration": 1218769999
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 4,
             "name": "user navigates to the URL",
             "match": {
               "location": "step_definitions\\airbnHome.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 3243341899
+              "duration": 2380537900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
-            "name": "user enters destination in the location field",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:27"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3111872599
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "user clicks United States from the destination",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:34"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3129109999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
             "line": 8,
-            "name": "user chooses the check-in date",
+            "name": "user click on the filter button",
             "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:41"
+              "location": "step_definitions\\filterOption.steps.ts:19"
             },
             "result": {
               "status": "passed",
-              "duration": 2880075200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 9,
-            "name": "user chooses the checkout date",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:49"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2556607600
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 10,
-            "name": "user clicks add guest option",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:57"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 469118499
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 11,
-            "name": "user clicks plus button to add the Adult guest",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:63"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 449436299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 12,
-            "name": "user clicks plus button again to add Children guest",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:69"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 363186899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 13,
-            "name": "user clicks plus button again to add Infant guest",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:75"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 332540999
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 14,
-            "name": "user clicks search button for searching hotels",
-            "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:81"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1052999700
+              "duration": 6644999300
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 15,
-            "name": "user verifies United States in the search page",
+            "line": 9,
+            "name": "user verifies that the filter options are displayed",
             "match": {
-              "location": "step_definitions\\airbnHome.steps.ts:87"
+              "location": "step_definitions\\filterOption.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 5854002199
+              "duration": 2255790899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user click on the Room type filter",
+            "match": {
+              "location": "step_definitions\\filterOption.steps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 615620400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 11,
+            "name": "user enter the minimum price as 5000",
+            "match": {
+              "location": "step_definitions\\filterOption.steps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1346783600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "user enter the maximum price as 10000",
+            "match": {
+              "location": "step_definitions\\filterOption.steps.ts:47"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 932629899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "user click on the Showrooms Button",
+            "match": {
+              "location": "step_definitions\\filterOption.steps.ts:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1505376600
             }
           },
           {
@@ -165,24 +113,24 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 6056473700
+              "duration": 3466809000
             }
           }
         ],
         "tags": [
           {
-            "name": "@requiresLogin",
-            "line": 3
+            "name": "@filterAirBnB",
+            "line": 6
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "airbnb-login-and-check-in",
+    "id": "filter-airbnb",
     "line": 1,
     "keyword": "Feature",
-    "name": "AirBnb Login and Check-in",
+    "name": "Filter AirBnB",
     "tags": [],
-    "uri": "features\\launchAirBn.feature"
+    "uri": "features\\filterAirBn.feature"
   }
 ]

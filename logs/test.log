@@ -29,3 +29,198 @@
 [2025-04-29 13:37:25] [INFO] [hooks]: Scenario completed in 31138ms
 [2025-04-29 13:37:25] [INFO] [hooks]: Cleaning up test environment
 [2025-04-29 13:37:25] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:10:26] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:10:26] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:10:26] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 15:10:26] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:10:27] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:10:30] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:10:32] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 15:10:33] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 15:10:33] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 15:10:34] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 15:10:35] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 15:10:38] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as check-in date.')])[1]
+[2025-04-29 15:10:38] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 15:10:40] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as checkout date.')])[1]
+[2025-04-29 15:10:41] [INFO] [airbnb-steps]: Selected checkout date
+[2025-04-29 15:10:41] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-guests-button']
+[2025-04-29 15:10:41] [INFO] [airbnb-steps]: Clicked on add guest button
+[2025-04-29 15:10:41] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-adults-increase-button']
+[2025-04-29 15:10:42] [INFO] [airbnb-steps]: Added an adult guest
+[2025-04-29 15:10:42] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-children-increase-button']
+[2025-04-29 15:10:42] [INFO] [airbnb-steps]: Added a child guest
+[2025-04-29 15:10:42] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-infants-increase-button']
+[2025-04-29 15:10:42] [INFO] [airbnb-steps]: Added an infant guest
+[2025-04-29 15:10:42] [INFO] [wrapper]: Clicking on: //*[@class='c1nkokj4 atm_9s_116y0ak atm_l8_exct8b atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr']
+[2025-04-29 15:10:43] [INFO] [airbnb-steps]: Clicked search button
+[2025-04-29 15:10:49] [INFO] [airbnb-steps]: Verified "United States" in search results
+[2025-04-29 15:10:49] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 15:10:52] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745919649105.zip
+[2025-04-29 15:10:53] [INFO] [hooks]: Scenario completed in 27778ms
+[2025-04-29 15:10:53] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:10:53] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:12:00] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:12:00] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:12:00] [INFO] [hooks]: Starting scenario: Login-and-Check-in
+[2025-04-29 15:12:00] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:12:01] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:12:04] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:12:06] [INFO] [wrapper]: Filling //*[@id='bigsearch-query-location-input'] with value: United States
+[2025-04-29 15:12:06] [INFO] [airbnb-steps]: Entered destination: United States
+[2025-04-29 15:12:07] [INFO] [wrapper]: Waiting for text=United States to be visible
+[2025-04-29 15:12:08] [INFO] [wrapper]: Clicking on: text=United States
+[2025-04-29 15:12:09] [INFO] [airbnb-steps]: Clicked on "United States" from the dropdown
+[2025-04-29 15:12:12] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as check-in date.')])[1]
+[2025-04-29 15:12:12] [INFO] [airbnb-steps]: Selected check-in date
+[2025-04-29 15:12:14] [INFO] [wrapper]: Clicking on: (//button[contains(@aria-label,'Available. Select as checkout date.')])[1]
+[2025-04-29 15:12:14] [INFO] [airbnb-steps]: Selected checkout date
+[2025-04-29 15:12:14] [INFO] [wrapper]: Clicking on: //*[@data-testid='structured-search-input-field-guests-button']
+[2025-04-29 15:12:15] [INFO] [airbnb-steps]: Clicked on add guest button
+[2025-04-29 15:12:15] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-adults-increase-button']
+[2025-04-29 15:12:15] [INFO] [airbnb-steps]: Added an adult guest
+[2025-04-29 15:12:15] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-children-increase-button']
+[2025-04-29 15:12:15] [INFO] [airbnb-steps]: Added a child guest
+[2025-04-29 15:12:15] [INFO] [wrapper]: Clicking on: //*[@data-testid='stepper-infants-increase-button']
+[2025-04-29 15:12:16] [INFO] [airbnb-steps]: Added an infant guest
+[2025-04-29 15:12:16] [INFO] [wrapper]: Clicking on: //*[@class='c1nkokj4 atm_9s_116y0ak atm_l8_exct8b atm_mk_h2mmj6 atm_wq_kb7nvz dir dir-ltr']
+[2025-04-29 15:12:17] [INFO] [airbnb-steps]: Clicked search button
+[2025-04-29 15:12:23] [INFO] [airbnb-steps]: Verified "United States" in search results
+[2025-04-29 15:12:23] [INFO] [hooks]: Finishing scenario: Login-and-Check-in
+[2025-04-29 15:12:27] [INFO] [hooks]: Trace saved to: ./reports/traces/Login-and-Check-in1745919743492.zip
+[2025-04-29 15:12:28] [INFO] [hooks]: Scenario completed in 28308ms
+[2025-04-29 15:12:28] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:12:28] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:18:22] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:18:22] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:18:22] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:18:22] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:18:23] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:18:26] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:18:26] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:18:26] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745920106165.zip
+[2025-04-29 15:18:27] [INFO] [hooks]: Scenario completed in 4816ms
+[2025-04-29 15:18:27] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:18:27] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:38:39] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:38:39] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:38:39] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:39] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:38:40] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:40] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921320827.zip
+[2025-04-29 15:38:41] [INFO] [hooks]: Scenario completed in 1597ms
+[2025-04-29 15:38:41] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:41] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:38:42] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:42] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921322706.zip
+[2025-04-29 15:38:43] [INFO] [hooks]: Scenario completed in 1884ms
+[2025-04-29 15:38:43] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:43] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:38:44] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:44] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921324303.zip
+[2025-04-29 15:38:44] [INFO] [hooks]: Scenario completed in 1419ms
+[2025-04-29 15:38:44] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:44] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:38:45] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:38:45] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921325728.zip
+[2025-04-29 15:38:46] [INFO] [hooks]: Scenario completed in 1549ms
+[2025-04-29 15:38:46] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:38:46] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:40:00] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:40:00] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:40:00] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:00] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:40:01] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:40:04] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:40:04] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:06] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921404161.zip
+[2025-04-29 15:40:06] [INFO] [hooks]: Scenario completed in 6089ms
+[2025-04-29 15:40:06] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:06] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:40:07] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:40:10] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:40:10] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:11] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921410796.zip
+[2025-04-29 15:40:12] [INFO] [hooks]: Scenario completed in 6287ms
+[2025-04-29 15:40:12] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:12] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:40:13] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:40:16] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:40:16] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:16] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921416056.zip
+[2025-04-29 15:40:16] [INFO] [hooks]: Scenario completed in 3921ms
+[2025-04-29 15:40:16] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:16] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:40:17] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:40:20] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:40:22] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:40:25] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921422279.zip
+[2025-04-29 15:40:26] [INFO] [hooks]: Scenario completed in 10068ms
+[2025-04-29 15:40:26] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:40:26] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:46:44] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:46:44] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:46:44] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:46:44] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:46:45] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:46:47] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:46:47] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:46:48] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921807582.zip
+[2025-04-29 15:46:49] [INFO] [hooks]: Scenario completed in 5024ms
+[2025-04-29 15:46:49] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:46:49] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:49:08] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:49:08] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:49:08] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:49:08] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:49:09] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:49:11] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:49:11] [INFO] [wrapper]: Clicking on: button[data-testid='category-bar-filter-button']
+[2025-04-29 15:49:14] [INFO] [airbnb-filter-steps]: Clicked on the filter button
+[2025-04-29 15:49:16] [INFO] [wrapper]: Checking if //div[text()='Filters'] is visible
+[2025-04-29 15:49:16] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:49:20] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Filter-AirBnB-by-price-and-rating1745921957029-failure.png
+[2025-04-29 15:49:21] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745921960044.zip
+[2025-04-29 15:49:22] [INFO] [hooks]: Scenario completed in 14248ms
+[2025-04-29 15:49:22] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:49:22] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:49:56] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:49:56] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:49:56] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:49:56] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:49:57] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:50:00] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:50:00] [INFO] [wrapper]: Checking if button[data-testid='category-bar-filter-button'] is visible
+[2025-04-29 15:50:00] [INFO] [wrapper]: Clicking on: button[data-testid='category-bar-filter-button']
+[2025-04-29 15:50:02] [INFO] [airbnb-filter-steps]: Clicked on the filter button
+[2025-04-29 15:50:05] [INFO] [wrapper]: Checking if //div[text()='Filters'] is visible
+[2025-04-29 15:50:05] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:50:08] [INFO] [hooks]: Screenshot saved to: ./reports/screenshots/Filter-AirBnB-by-price-and-rating1745922005799-failure.png
+[2025-04-29 15:50:10] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745922009018.zip
+[2025-04-29 15:50:11] [INFO] [hooks]: Scenario completed in 15134ms
+[2025-04-29 15:50:11] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:50:11] [INFO] [hooks]: Test environment cleanup complete
+[2025-04-29 15:50:48] [INFO] [hooks]: Setting up test environment
+[2025-04-29 15:50:48] [INFO] [hooks]: Test environment setup complete
+[2025-04-29 15:50:48] [INFO] [hooks]: Starting scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:50:48] [INFO] [hooks]: Using browser: chrome
+[2025-04-29 15:50:49] [INFO] [wrapper]: Navigating to: https://www.airbnb.co.in/
+[2025-04-29 15:50:51] [INFO] [airbnb-steps]: Navigated to Airbnb URL
+[2025-04-29 15:50:57] [INFO] [wrapper]: Checking if button[data-testid='category-bar-filter-button'] is visible
+[2025-04-29 15:50:57] [INFO] [wrapper]: Clicking on: button[data-testid='category-bar-filter-button']
+[2025-04-29 15:50:58] [INFO] [airbnb-filter-steps]: Clicked on the filter button
+[2025-04-29 15:51:00] [INFO] [wrapper]: Checking if //div[text()='Filters'] is visible
+[2025-04-29 15:51:00] [INFO] [airbnb-filter-steps]: Verified that filter options are displayed
+[2025-04-29 15:51:00] [INFO] [wrapper]: Clicking on: //span[text()='Room']
+[2025-04-29 15:51:01] [INFO] [airbnb-filter-steps]: Clicked on the Room type filter
+[2025-04-29 15:51:01] [INFO] [wrapper]: Filling input[id='price_filter_min'] with value: 5000
+[2025-04-29 15:51:02] [INFO] [airbnb-filter-steps]: Entered minimum price: 5000
+[2025-04-29 15:51:02] [INFO] [wrapper]: Filling input[id='price_filter_max'] with value: 10000
+[2025-04-29 15:51:03] [INFO] [airbnb-filter-steps]: Entered maximum price: 10000
+[2025-04-29 15:51:03] [INFO] [wrapper]: Clicking on: //footer/div/a[contains(text(),'Show')]
+[2025-04-29 15:51:05] [INFO] [airbnb-filter-steps]: Verified applied price filter is correct
+[2025-04-29 15:51:05] [INFO] [hooks]: Finishing scenario: Filter-AirBnB-by-price-and-rating
+[2025-04-29 15:51:07] [INFO] [hooks]: Trace saved to: ./reports/traces/Filter-AirBnB-by-price-and-rating1745922065208.zip
+[2025-04-29 15:51:08] [INFO] [hooks]: Scenario completed in 20579ms
+[2025-04-29 15:51:08] [INFO] [hooks]: Cleaning up test environment
+[2025-04-29 15:51:08] [INFO] [hooks]: Test environment cleanup complete

@@ -9,11 +9,11 @@ const logger = createLogger('wrapper');
  */
 export class PlaywrightWrapper {
   public page: Page;
-  
+
   constructor(page: Page) {
     this.page = page;
   }
-  
+
   /**
    * Navigate to a URL
    * @param url - The URL to navigate to
@@ -22,7 +22,7 @@ export class PlaywrightWrapper {
     logger.info(`Navigating to: ${url}`);
     await this.page.goto(url, { waitUntil: 'load', timeout: DEFAULT_TIMEOUT });
   }
-  
+
   /**
    * Get page title
    * @returns The page title
@@ -32,7 +32,7 @@ export class PlaywrightWrapper {
     logger.info(`Page title: ${title}`);
     return title;
   }
-  
+
   /**
    * Get the current URL
    * @returns The current URL
@@ -42,7 +42,7 @@ export class PlaywrightWrapper {
     logger.info(`Current URL: ${url}`);
     return url;
   }
-  
+
   /**
    * Click on an element
    * @param selector - The element selector
@@ -51,7 +51,7 @@ export class PlaywrightWrapper {
     logger.info(`Clicking on: ${selector}`);
     await this.page.click(selector, { timeout: DEFAULT_TIMEOUT });
   }
-  
+
   /**
    * Double click on an element
    * @param selector - The element selector
@@ -60,7 +60,7 @@ export class PlaywrightWrapper {
     logger.info(`Double clicking on: ${selector}`);
     await this.page.dblclick(selector, { timeout: DEFAULT_TIMEOUT });
   }
-  
+
   /**
    * Fill an input element
    * @param selector - The input element selector
@@ -68,9 +68,10 @@ export class PlaywrightWrapper {
    */
   async fill(selector: string, value: string): Promise<void> {
     logger.info(`Filling ${selector} with value: ${value}`);
+    await this.page.locator(selector).clear();
     await this.page.fill(selector, value, { timeout: DEFAULT_TIMEOUT });
   }
-  
+
   /**
    * Check if an element is visible
    * @param selector - The element selector
@@ -81,7 +82,7 @@ export class PlaywrightWrapper {
     const element = this.page.locator(selector);
     return await element.isVisible({ timeout: DEFAULT_TIMEOUT });
   }
-  
+
   /**
    * Wait for an element to be visible
    * @param selector - The element selector
@@ -91,7 +92,7 @@ export class PlaywrightWrapper {
     logger.info(`Waiting for ${selector} to be visible`);
     await this.page.waitForSelector(selector, { state: 'visible', timeout });
   }
-  
+
   /**
    * Wait for an element to be hidden
    * @param selector - The element selector
@@ -101,7 +102,7 @@ export class PlaywrightWrapper {
     logger.info(`Waiting for ${selector} to be hidden`);
     await this.page.waitForSelector(selector, { state: 'hidden', timeout });
   }
-  
+
   /**
    * Get text from an element
    * @param selector - The element selector
@@ -113,7 +114,7 @@ export class PlaywrightWrapper {
     logger.info(`Text content: ${text}`);
     return text;
   }
-  
+
   /**
    * Get all text values from elements matching a selector
    * @param selector - The element selector
@@ -124,16 +125,16 @@ export class PlaywrightWrapper {
     const elements = this.page.locator(selector);
     const count = await elements.count();
     const texts: string[] = [];
-    
+
     for (let i = 0; i < count; i++) {
       const text = await elements.nth(i).innerText();
       texts.push(text);
     }
-    
+
     logger.info(`Found ${texts.length} texts`);
     return texts;
   }
-  
+
   /**
    * Select an option from a dropdown by value
    * @param selector - The dropdown selector
@@ -143,7 +144,7 @@ export class PlaywrightWrapper {
     logger.info(`Selecting value ${value} from dropdown ${selector}`);
     await this.page.selectOption(selector, { value });
   }
-  
+
   /**
    * Select an option from a dropdown by label
    * @param selector - The dropdown selector
@@ -153,7 +154,7 @@ export class PlaywrightWrapper {
     logger.info(`Selecting label ${label} from dropdown ${selector}`);
     await this.page.selectOption(selector, { label });
   }
-  
+
   /**
    * Switch to a tab by index
    * @param index - The tab index
@@ -161,15 +162,15 @@ export class PlaywrightWrapper {
   async switchToTab(index: number): Promise<void> {
     logger.info(`Switching to tab index: ${index}`);
     const pages = this.page.context().pages();
-    
+
     if (index >= pages.length) {
       throw new Error(`Tab index out of bounds: ${index}, total tabs: ${pages.length}`);
     }
-    
+
     this.page = pages[index];
     await this.page.bringToFront();
   }
-  
+
   /**
    * Take a screenshot
    * @param path - The file path to save the screenshot
@@ -178,7 +179,7 @@ export class PlaywrightWrapper {
     logger.info(`Taking screenshot: ${path}`);
     await this.page.screenshot({ path, fullPage: true });
   }
-  
+
   /**
    * Execute JavaScript in the page context
    * @param script - The JavaScript code to execute
@@ -189,7 +190,7 @@ export class PlaywrightWrapper {
     logger.info('Executing JavaScript');
     return await this.page.evaluate(script, ...args);
   }
-  
+
   /**
    * Refresh the current page
    */
@@ -197,7 +198,7 @@ export class PlaywrightWrapper {
     logger.info('Refreshing page');
     await this.page.reload({ waitUntil: 'networkidle' });
   }
-  
+
   /**
    * Go back in browser history
    */
@@ -205,7 +206,7 @@ export class PlaywrightWrapper {
     logger.info('Going back in browser history');
     await this.page.goBack({ waitUntil: 'networkidle' });
   }
-  
+
   /**
    * Go forward in browser history
    */
