@@ -16,7 +16,7 @@ declare module '@cucumber/cucumber' {
   }
 }
 
-const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(world.page);
+const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(world.page, world.context);
 
 Given('user navigates to the URL', async function () {
   const wrapper = getWrapper(this);

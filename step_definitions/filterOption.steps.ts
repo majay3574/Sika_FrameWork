@@ -14,7 +14,7 @@ declare module '@cucumber/cucumber' {
     }
 }
 
-const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(world.page);
+const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(world.page, world.context);
 
 When('user click on the filter button', async function () {
     const wrapper = getWrapper(this);

@@ -1,4 +1,4 @@
-import { Page, Locator } from '@playwright/test';
+import { Page, Locator, BrowserContext } from '@playwright/test';
 import { DEFAULT_TIMEOUT } from '../config/config';
 import { createLogger } from './logger';
 
@@ -8,10 +8,13 @@ const logger = createLogger('wrapper');
  * Wrapper class for Playwright Page interactions
  */
 export class PlaywrightWrapper {
-  public page: Page;
 
-  constructor(page: Page) {
+  public page: Page;
+  public context: BrowserContext
+
+  constructor(page: Page, context: BrowserContext) {
     this.page = page;
+    this.context = context;
   }
 
   /**
