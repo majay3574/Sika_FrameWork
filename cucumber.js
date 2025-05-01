@@ -15,6 +15,7 @@ const common = {
     snippetInterface: 'async-await'
   }
 };
+
 module.exports = {
 
   chrome: {

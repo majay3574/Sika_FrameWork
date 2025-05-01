@@ -4,6 +4,7 @@ import fs from 'fs-extra';
 import { BASE_URL, DEFAULT_TIMEOUT, SET_BROWSER, STEP_TIMEOUT, browserOptions, screenshotOptions, videoOptions, traceOptions } from '../config/config';
 import { createLogger } from '../utils/logger';
 
+
 const logger = createLogger('hooks');
 
 
@@ -90,6 +91,7 @@ Before(async function (this: CustomWorld, scenario) {
 
 });
 
+
 // Cleanup after each scenario
 After(async function (this: CustomWorld, scenario) {
   logger.info(`Finishing scenario: ${this.testName}`);
@@ -101,6 +103,7 @@ After(async function (this: CustomWorld, scenario) {
       logger.info(`Screenshot saved to: ${screenshotPath}`);
     }
   }
+
   // Stop tracing if enabled
   if (traceOptions.enabled && this.context) {
     const timeStamp = Date.now();

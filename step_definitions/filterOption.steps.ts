@@ -1,6 +1,5 @@
 import { Given, When, Then } from '@cucumber/cucumber';
 import { expect } from 'chai';
-import { Page } from '@playwright/test';
 import { PlaywrightWrapper } from '../utils/wrapper';
 import { createLogger } from '../utils/logger';
 import { Selectors } from './selectors';
@@ -8,12 +7,13 @@ import { Selectors } from './selectors';
 const logger = createLogger('airbnb-filter-steps');
 const selectors = new Selectors();
 
-declare module '@cucumber/cucumber' {
+/* declare module '@cucumber/cucumber' {
     interface World {
         page: Page;
+        context:BrowserContext;
     }
 }
-
+ */
 const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(world.page, world.context);
 
 When('user click on the filter button', async function () {

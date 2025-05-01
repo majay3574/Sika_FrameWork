@@ -53,6 +53,7 @@ const browserOptions: Record<string, LaunchOptions> = {
 // Screenshot, video, and trace options
 const screenshotOptions = {
   takeOnFailure: true,
+  takeOnSuccess: true,
   path: './reports/screenshots/'
 };
 

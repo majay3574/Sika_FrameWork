@@ -1,7 +1,6 @@
 import { Page, Locator, BrowserContext } from '@playwright/test';
 import { DEFAULT_TIMEOUT } from '../config/config';
 import { createLogger } from './logger';
-
 const logger = createLogger('wrapper');
 
 /**
@@ -16,6 +15,10 @@ export class PlaywrightWrapper {
     this.page = page;
     this.context = context;
   }
+
+
+
+  
 
   /**
    * Navigate to a URL

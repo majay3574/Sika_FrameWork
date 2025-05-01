@@ -11,12 +11,19 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "paths": {
-      "*": ["node_modules/*"]
+      "*": [
+        "node_modules/*"
+      ]
     },
-    "types": ["node", "cucumber"]
+    "types": [
+      "node",
+      "cucumber"
+    ]
   },
   "include": [
-    "**/*.ts"
+    "**/*.ts",
+    "features/**/*.ts",
+    "step_definitions/**/*.ts"
   ],
   "exclude": [
     "node_modules"

@@ -7,15 +7,13 @@
     "test:chrome": "cucumber-js --profile chrome",
     "test:firefox": "cucumber-js --profile firefox",
     "test:webkit": "cucumber-js --profile webkit",
-    "report:generate": "node ./utils/report-generator.js",
-    "allure:generate": "allure generate ./reports/allure-results -o ./reports/allure-report",
-    "allure:open": "allure open ./reports/allure-report"
+    "test:msedge": "cucumber-js --profile msedge"
+    
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",
     "@cucumber/messages": "^21.0.0",
     "@playwright/test": "^1.30.0",
-    "allure-commandline": "^2.24.1",
     "allure-cucumberjs": "^2.9.2",
     "csv-parser": "^3.0.0",
     "dotenv": "^16.0.3",
@@ -30,7 +28,9 @@
     "@types/cucumber": "^7.0.0",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^18.13.0",
+    "allure-commandline": "^2.34.0",
     "chai": "^4.3.7",
+    "cucumberjs-allure2-reporter": "^1.3.0",
     "ts-node": "^10.9.1"
   }
 }
