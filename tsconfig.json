@@ -1,31 +1,33 @@
 {
   "compilerOptions": {
-    "target": "es2018",
-    "module": "commonjs",
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "resolveJsonModule": true,
-    "strict": false,
-    "baseUrl": ".",
-    "outDir": "./dist",
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
+    "target": "ESNext", // Keep ESNext for modern JavaScript features
+    "module": "commonjs", // CommonJS for Node.js compatibility
+    "moduleResolution": "node", // Node.js module resolution
+    "esModuleInterop": true, // Enable ES module interop for compatibility
+    "resolveJsonModule": true, // Allow importing JSON files
+    "strict": true, // Enable strict type checking for better type safety
+    "baseUrl": ".", // Base directory for resolving paths
+    "outDir": "./dist", // Output directory for compiled files
+    "skipLibCheck": true, // Skip type checking for declaration files
+    "forceConsistentCasingInFileNames": true, // Enforce consistent casing in imports
     "paths": {
       "*": [
         "node_modules/*"
       ]
     },
     "types": [
-      "node",
-      "cucumber"
+      "node", 
+      "playwright",
     ]
   },
   "include": [
-    "**/*.ts",
-    "features/**/*.ts",
-    "step_definitions/**/*.ts"
+    "**/*.ts", // Include all TypeScript files
+    "features/**/*.ts", // Include feature-related TypeScript files
+    "step_definitions/**/*.ts", // Include step definition files
+    "hooks/**/*.ts" // Include hooks files
   ],
   "exclude": [
-    "node_modules"
+    "node_modules", // Exclude node_modules
+    "dist" // Exclude the output directory
   ]
 }

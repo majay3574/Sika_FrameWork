@@ -1,14 +1,12 @@
 import { Before, After, BeforeAll, AfterAll, Status, setDefaultTimeout } from '@cucumber/cucumber';
-import { chromium, firefox, webkit, Browser, BrowserContext, Page } from '@playwright/test';
+import { chromium, firefox, webkit } from '@playwright/test';
 import fs from 'fs-extra';
-import { BASE_URL, DEFAULT_TIMEOUT, SET_BROWSER, STEP_TIMEOUT, browserOptions, screenshotOptions, videoOptions, traceOptions } from '../config/config';
+import { STEP_TIMEOUT, browserOptions, screenshotOptions, videoOptions, traceOptions } from '../config/config';
 import { createLogger } from '../utils/logger';
-
+import { CustomWorld } from './custom-world';
 
 const logger = createLogger('hooks');
-
-
-export interface CustomWorld {
+/* export interface CustomWorld extends World {
   browser: Browser | null;
   context: BrowserContext | null;
   page: Page | null;
@@ -17,19 +15,17 @@ export interface CustomWorld {
   parameters: {
     browser?: string;
   };
-}
+} */
 
 // Set default timeout
 setDefaultTimeout(STEP_TIMEOUT);
 
-// Ensure reports directories exist
 BeforeAll(async function () {
   logger.info('Setting up test environment');
-  // Create necessary directories
   await fs.ensureDir('./reports/screenshots');
   await fs.ensureDir('./reports/videos');
   await fs.ensureDir('./reports/traces');
-  // await fs.ensureDir('./reports/allure-results');
+  await fs.ensureDir('./reports/allure-results');
   logger.info('Test environment setup complete');
 });
 
@@ -44,12 +40,10 @@ Before(async function (this: CustomWorld, scenario) {
   this.startTime = new Date();
   this.testName = scenario.pickle.name.replace(/\s+/g, '-');
   logger.info(`Starting scenario: ${this.testName}`);
+
   // Get browser type from parameter or default to chromium
   const browserType = this.parameters.browser || "chrome";
-  //const browserType = this.SET_BROWSER;
-
   logger.info(`Using browser: ${browserType}`);
-  // Launch browser based on type
   switch (browserType) {
     case 'chrome':
       this.browser = await chromium.launch(browserOptions.chrome);
@@ -66,55 +60,59 @@ Before(async function (this: CustomWorld, scenario) {
     default:
       throw new Error(`Unsupported browser type: ${browserType}`);
   }
+
   const browser: any = this.parameters.browser;
-  // Determine if viewport should be set
   const shouldSetViewportNull = ["chrome", "msedge", "chromium", "firefox"].includes(browser);
 
-  // Prepare context options
   const contextOptions: any = {
     recordVideo: videoOptions.enabled ? { dir: videoOptions.path } : undefined,
     ...(shouldSetViewportNull ? { viewport: null } : {})
   };
 
-  // Create browser context
   this.context = await this.browser.newContext(contextOptions);
 
-  // Start tracing if enabled
   if (traceOptions.enabled) {
     await this.context.tracing.start({
       screenshots: true,
       snapshots: true,
     });
   }
-  // Create page
+
   this.page = await this.context.newPage();
-
 });
-
 
 // Cleanup after each scenario
 After(async function (this: CustomWorld, scenario) {
   logger.info(`Finishing scenario: ${this.testName}`);
-  if (scenario.result?.status === Status.FAILED && screenshotOptions.takeOnFailure) {
-    if (this.page) {
+
+  if (scenario.result?.status === Status.FAILED || Status.PASSED) {
+    if (this.page && screenshotOptions.takeOnFailure) {
       const timeStamp = Date.now();
       const screenshotPath = `${screenshotOptions.path}${this.testName}${timeStamp}-failure.png`;
-      await this.page.screenshot({ path: screenshotPath, fullPage: true });
+      await this.page.screenshot({ path: screenshotPath, fullPage: false });
+      const screenshot = fs.readFileSync(screenshotPath);
+      this.attach(screenshot, 'image/png');
+
       logger.info(`Screenshot saved to: ${screenshotPath}`);
     }
   }
 
-  // Stop tracing if enabled
+
   if (traceOptions.enabled && this.context) {
     const timeStamp = Date.now();
     const tracePath = `${traceOptions.path}${this.testName}${timeStamp}.zip`;
     await this.context.tracing.stop({ path: tracePath });
+    // For Allure reporting, attach the trace to the scenario result
+    // This uses built-in cucumber attachment mechanism which Allure reporter picks up
+    const trace = fs.readFileSync(tracePath);
+    this.attach(trace, 'application/zip');
     logger.info(`Trace saved to: ${tracePath}`);
   }
-  // Close browser
+
   if (this.browser) {
     await this.browser.close();
   }
+
   const endTime = new Date();
   const duration = endTime.getTime() - this.startTime.getTime();
   logger.info(`Scenario completed in ${duration}ms`);

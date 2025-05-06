@@ -8,7 +8,6 @@
     "test:firefox": "cucumber-js --profile firefox",
     "test:webkit": "cucumber-js --profile webkit",
     "test:msedge": "cucumber-js --profile msedge"
-    
   },
   "dependencies": {
     "@cucumber/cucumber": "^11.2.0",
@@ -25,11 +24,10 @@
   },
   "devDependencies": {
     "@types/chai": "^4.3.4",
-    "@types/cucumber": "^7.0.0",
     "@types/fs-extra": "^11.0.1",
     "@types/node": "^18.13.0",
-    "allure-commandline": "^2.34.0",
     "chai": "^4.3.7",
+    "cucumber-html-reporter": "^6.0.0",
     "cucumberjs-allure2-reporter": "^1.3.0",
     "ts-node": "^10.9.1"
   }

@@ -1,10 +1,8 @@
 import dotenv from 'dotenv';
 import { LaunchOptions } from '@playwright/test';
 
-// Load environment variables from .env file
 dotenv.config();
 
-// Base URL for the application
 const BASE_URL = process.env.BASE_URL || 'https://www.airbnb.co.in/';
 
 // Timeout values
