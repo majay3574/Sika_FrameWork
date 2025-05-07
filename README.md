@@ -50,6 +50,11 @@ npm run test:chrome  or npx cucumber-js -p chrome
 npm run test:firefox or npx cucumber-js -p firefox
 npm run test:webkit  or npx cucumber-js -p webkit
 ```
+run parallel execution
+
+```bash
+npx cucumber-js --parallel 4
+```
 
 run using tag Name:
 
