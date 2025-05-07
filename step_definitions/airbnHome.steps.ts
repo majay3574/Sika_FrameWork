@@ -21,6 +21,11 @@ const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(worl
 Given('user navigates to the URL', async function () {
   const wrapper = getWrapper(this);
   await wrapper.navigateTo(BASE_URL);
+  let closeBtn = wrapper.page.locator(selectors.closeBtn);
+  await wrapper.page.waitForTimeout(5000);
+  if (await closeBtn.isVisible({ timeout: 10000 })) {
+    closeBtn.click();
+  }
   logger.info('Navigated to Airbnb URL');
 });
 

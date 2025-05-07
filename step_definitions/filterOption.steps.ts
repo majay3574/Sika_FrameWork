@@ -18,11 +18,6 @@ const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(worl
 
 When('user click on the filter button', async function () {
     const wrapper = getWrapper(this);
-    let closeBtn = wrapper.page.locator(`//button[@aria-label='Close']`);
-    await wrapper.page.waitForTimeout(5000);
-    if (await closeBtn.isVisible({ timeout: 10000 })) {
-        closeBtn.click();
-    }
     await wrapper.isVisible(selectors.filterButton);
     await wrapper.click(selectors.filterButton);
     logger.info('Clicked on the filter button');

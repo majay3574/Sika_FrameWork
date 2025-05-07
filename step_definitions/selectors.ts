@@ -1,4 +1,5 @@
 export class Selectors {
+  closeBtn = `//button[@aria-label='Close']`;
   destinationField = "//*[@id='bigsearch-query-location-input']";
   destinationDropdownOption = "text=United States";
   checkinDateField = "//*[@data-testid='structured-search-input-field-split-dates-0']";
