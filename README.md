@@ -60,6 +60,8 @@ run using tag Name:
 
 ```bash
 npx cucumber-js --tags "@salesforceAccount"
+npx cucumber-js -p chrome --tags "@smoke"
+
 
 
 ## Generating Reports

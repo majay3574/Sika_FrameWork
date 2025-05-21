@@ -1,4 +1,6 @@
-// filepath: c:\Users\AjayMichael\Downloads\sakura_framework\cucumber.js
+
+const browserName = process.env.BROWSER || 'msedge';
+
 const common = {
   requireModule: ['ts-node/register'],
   require: [
@@ -9,7 +11,7 @@ const common = {
     'progress',
     'json:reports/cucumber-report.json',
     'html:reports/cucumber-report.html',
-    //'allure-cucumberjs:reports/allure-results/' // Ensure this ends with a slash
+    //'allure-cucumberjs:reports/allure-results/'
   ],
   formatOptions: {
     snippetInterface: 'async-await'
@@ -17,14 +19,12 @@ const common = {
 };
 
 module.exports = {
-
   chrome: {
     ...common,
     worldParameters: {
       browser: 'chrome'
     }
   },
-
   msedge: {
     ...common,
     worldParameters: {
@@ -46,7 +46,7 @@ module.exports = {
   default: {
     ...common,
     worldParameters: {
-      browser: 'chrome'
+      browser: browserName
     }
   }
 };

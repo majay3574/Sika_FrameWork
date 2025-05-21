@@ -10,7 +10,7 @@ const DEFAULT_TIMEOUT = 30000;
 const STEP_TIMEOUT = 60000;
 
 // use chromium | chrome | msedge | firefox | webkit
-const SET_BROWSER = 'chrome'
+const SET_BROWSER = 'msedge'
 
 // Browser configuration
 const browserOptions: Record<string, LaunchOptions> = {
