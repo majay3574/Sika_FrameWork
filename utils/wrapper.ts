@@ -18,8 +18,6 @@ export class PlaywrightWrapper {
 
 
 
-  
-
   /**
    * Navigate to a URL
    * @param url - The URL to navigate to
@@ -219,5 +217,11 @@ export class PlaywrightWrapper {
   async goForward(): Promise<void> {
     logger.info('Going forward in browser history');
     await this.page.goForward({ waitUntil: 'networkidle' });
+  }
+
+  async keyBoardpress(selector: string, key: string): Promise<void> {
+    await this.page.waitForSelector(selector, { state: 'visible' });
+    await this.page.locator(selector).focus()
+    await this.page.keyboard.press(key);
   }
 }

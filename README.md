@@ -59,7 +59,8 @@ npx cucumber-js --parallel 4
 run using tag Name:
 
 ```bash
-npm run test:chrome -- --tags "@requiresLogin"
+npx cucumber-js --tags "@salesforceAccount"
+
 
 ## Generating Reports
 
