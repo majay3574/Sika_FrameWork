@@ -3,7 +3,7 @@ import { LaunchOptions } from '@playwright/test';
 
 dotenv.config();
 
-const BASE_URL = process.env.BASE_URL || 'https://www.airbnb.co.in/';
+const BASE_URL = process.env.BASE_URL || 'https://login.salesforce.com/?locale=in';
 
 // Timeout values
 const DEFAULT_TIMEOUT = 30000;

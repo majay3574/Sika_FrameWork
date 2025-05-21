@@ -3,6 +3,8 @@ import { expect } from 'chai';
 import { PlaywrightWrapper } from '../utils/wrapper';
 import { createLogger } from '../utils/logger';
 import { Selectors } from './selectors';
+import { BASE_URL } from '../config/config';
+import { credentialConstants } from '../config/credentialConstants';
 
 const logger = createLogger('salesforceLoginPage');
 const selectors = new Selectors();
@@ -11,14 +13,14 @@ const getWrapper = (world: any): PlaywrightWrapper => new PlaywrightWrapper(worl
 
 Given('user navigates to Salesforce login page', async function () {
     const wrapper = getWrapper(this);
-    await wrapper.navigateTo('https://login.salesforce.com');
+    await wrapper.navigateTo(BASE_URL);
     logger.info('Navigated to Salesforce login page');
 });
 
 When('user enters valid username and password', async function () {
     const wrapper = getWrapper(this);
-    await wrapper.fill("input[id='username']", "majay3574@gmail.com");
-    await wrapper.fill("input[id='password']", "Ajaymichael@321");
+    await wrapper.fill("input[id='username']", credentialConstants.USERNAME);
+    await wrapper.fill("input[id='password']", credentialConstants.PASSWORD);
     logger.info('Entered username and password');
 });
 
